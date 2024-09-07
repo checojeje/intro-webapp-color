@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1 class="display-4">Selector de Color RGB</h1>
+            <p class="lead">Elige un color y ajusta los valores RGB usando los controles deslizantes o el selector de color.</p>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="colorPicker" class="font-weight-bold">Selecciona un color</label>
+                    <input type="color" id="colorPicker" class="form-control form-control-color">
+                </div>
+                <div class="form-group">
+                    <label for="red" class="font-weight-bold">Rojo</label>
+                    <input type="range" id="red" class="form-control-range" min="0" max="255" value="0">
+                    <input type="number" id="redInput" class="form-control" min="0" max="255" value="0">
+                    <small id="redValue" class="form-text text-muted">0</small>
+                </div>
+                <div class="form-group">
+                    <label for="green" class="font-weight-bold">Verde</label>
+                    <input type="range" id="green" class="form-control-range" min="0" max="255" value="0">
+                    <input type="number" id="greenInput" class="form-control" min="0" max="255" value="0">
+                    <small id="greenValue" class="form-text text-muted">0</small>
+                </div>
+                <div class="form-group">
+                    <label for="blue" class="font-weight-bold">Azul</label>
+                    <input type="range" id="blue" class="form-control-range" min="0" max="255" value="0">
+                    <input type="number" id="blueInput" class="form-control" min="0" max="255" value="0">
+                    <small id="blueValue" class="form-text text-muted">0</small>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="colorDisplay" class="color-box mb-3"></div>
+                <div id="hexValue" class="mt-2 font-weight-bold"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
